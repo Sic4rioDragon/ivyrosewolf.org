@@ -1,137 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="canonical" href="https://ivyrosewolf.org/deadbydaylight/">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="IvyRoseWolf Dead by Daylight favorites, builds, loadouts and Twitch challenge picker." />
-  <title>IvyRoseWolf • Dead by Daylight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" href="../assets/icons/ivy_logo.png" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <title>DBD Killers — IvyRoseWolf</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="../assets/icons/ivy_logo.png" />
+
+  <meta name="description" content="IvyRoseWolf Dead by Daylight killer collection — builds + clips." />
+  <meta property="og:title" content="Dead by Daylight • Killers • IvyRoseWolf" />
+  <meta property="og:description" content="Killer collection — builds + clips." />
+  <meta property="og:image" content="https://sic4riodragon.uk/deadbydaylight/assets/img/banner1.png" />
+  <meta property="og:url" content="https://ivyrosewolf.org/deadbydaylight/" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
+
 <body>
-  <div class="bg">
-    <div class="noise" aria-hidden="true"></div>
-    <div class="vignette" aria-hidden="true"></div>
+  <div class="topbar">
+    <a class="back-btn" href="https://ivyrosewolf.org/">← Back to Home</a>
+
+    <div class="titleblock">
+      <div class="title-row">
+        <a class="title-avatar-link" href="/deadbydaylight/survivors.html" title="Go to Survivors">
+          <img class="title-avatar" src="https://sic4riodragon.uk/deadbydaylight/assets/img/yui.png" alt="Survivors">
+        </a>
+
+        <div class="title-text">
+          <h1>Dead by Daylight</h1>
+          <p>Ivy’s killer collection</p>
+        </div>
+
+        <a class="title-avatar-link" href="/deadbydaylight/" title="Go to Killers">
+          <img class="title-avatar" src="https://sic4riodragon.uk/deadbydaylight/assets/img/huntress.png" alt="Killers">
+        </a>
+      </div>
+    </div>
+
+    <div style="width:140px;"></div>
   </div>
 
-  <header class="topbar">
-    <a class="brand" href="/" aria-label="Back to home">
-      <img class="brand__logo" src="../assets/icons/ivy_logo.png" alt="IvyRoseWolf logo" />
-      <span class="brand__text">IvyRoseWolf</span>
-    </a>
-    <a class="btn btn--ghost topbarChallengeBtn" href="/challenges/">
-      You want to pick a challenge? Here you can do that.
-    </a>
-  </header>
+  <div class="controls">
+    <input id="searchInput" class="search" type="search" placeholder="Search killers… (e.g. huntress, oni, spirit)" autocomplete="off">
+  </div>
 
-  <main class="container">
-    <section class="dbdHeader">
-      <h1 class="dbdTitle">Dead by Daylight</h1>
-      <p class="dbdSub">Favorite Characters</p>
-    </section>
+  <main id="killer-grid"></main>
 
-    <section class="dbdGrid" aria-label="DBD Characters">
-      <article class="charCard" id="dwightCard">
-        <div class="charImgWrap">
-          <div class="prestigeBadge" id="prestigeBadge" aria-label="Prestige">
-            <img class="prestigeFill" id="prestigeFill" alt="" />
-            <img class="prestigeBorder" id="prestigeBorder" alt="" />
-            <div class="prestigeNum" id="prestigeNum"></div>
-          </div>
+  <footer>
+    <p id="updated"></p>
+    <button id="toggleNamesBtn" class="toggle-btn" type="button">Turn names off</button>
+  </footer>
 
-          <img class="charImg" src="../assets/images/dino_dwight.png" alt="Dwight Fairfield (Dino Dwight)" />
-        </div>
+  <div id="killerModal" class="modal hidden">
+    <div class="modal-card">
+      <button id="modalClose" class="modal-close">×</button>
+      <h2 id="modalName"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
 
-        <div class="charMeta">
-          <div class="charName">Dwight Fairfield</div>
-
-          <div class="loadouts" aria-label="Favorite loadouts">
-            <div class="loadoutBlock">
-              <div class="loadoutTitle">
-                Fav Loadout 1 <span class="loadoutName" id="l1name"></span>
-              </div>
-              <div class="loadout" id="loadout1">
-                <a class="slot" id="l1perk1" target="_blank" rel="noreferrer"><img alt="Perk 1"></a>
-                <a class="slot" id="l1perk2" target="_blank" rel="noreferrer"><img alt="Perk 2"></a>
-                <a class="slot" id="l1perk3" target="_blank" rel="noreferrer"><img alt="Perk 3"></a>
-                <a class="slot" id="l1perk4" target="_blank" rel="noreferrer"><img alt="Perk 4"></a>
-              </div>
-            </div>
-
-            <div class="loadoutBlock">
-              <div class="loadoutTitle">
-                Fav Loadout 2 <span class="loadoutName" id="l2name"></span>
-              </div>
-              <div class="loadout" id="loadout2">
-                <a class="slot" id="l2perk1" target="_blank" rel="noreferrer"><img alt="Perk 1"></a>
-                <a class="slot" id="l2perk2" target="_blank" rel="noreferrer"><img alt="Perk 2"></a>
-                <a class="slot" id="l2perk3" target="_blank" rel="noreferrer"><img alt="Perk 3"></a>
-                <a class="slot" id="l2perk4" target="_blank" rel="noreferrer"><img alt="Perk 4"></a>
-
-                <span class="pillText" id="l2item"></span>
-                <span class="pillText" id="l2offering"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="charCard" id="wraithCard">
-        <div class="charImgWrap">
-          <div class="prestigeBadge" id="wraithPrestigeBadge" aria-label="Prestige">
-            <img class="prestigeFill" id="wraithPrestigeFill" alt="" />
-            <img class="prestigeBorder" id="wraithPrestigeBorder" alt="" />
-            <div class="prestigeNum" id="wraithPrestigeNum"></div>
-          </div>
-
-          <img class="charImg" src="../assets/images/wraith.png" alt="The Wraith" />
-        </div>
-
-        <div class="charMeta">
-          <div class="charName">The Wraith</div>
-
-          <div class="loadouts" aria-label="Favorite loadouts">
-            <div class="loadoutBlock">
-              <div class="loadoutTitle">
-                Fav Loadout 1 <span class="loadoutName" id="w1name"></span>
-              </div>
-              <div class="loadout" id="wloadout1">
-                <a class="slot" id="w1perk1" target="_blank" rel="noreferrer"><img alt="Perk 1"></a>
-                <a class="slot" id="w1perk2" target="_blank" rel="noreferrer"><img alt="Perk 2"></a>
-                <a class="slot" id="w1perk3" target="_blank" rel="noreferrer"><img alt="Perk 3"></a>
-                <a class="slot" id="w1perk4" target="_blank" rel="noreferrer"><img alt="Perk 4"></a>
-              </div>
-            </div>
-
-            <div class="loadoutBlock">
-              <div class="loadoutTitle">
-                Fav Loadout 2 <span class="loadoutName" id="w2name"></span>
-              </div>
-              <div class="loadout" id="wloadout2">
-                <a class="slot" id="w2perk1" target="_blank" rel="noreferrer"><img alt="Perk 1"></a>
-                <a class="slot" id="w2perk2" target="_blank" rel="noreferrer"><img alt="Perk 2"></a>
-                <a class="slot" id="w2perk3" target="_blank" rel="noreferrer"><img alt="Perk 3"></a>
-                <a class="slot" id="w2perk4" target="_blank" rel="noreferrer"><img alt="Perk 4"></a>
-
-                <span class="pillText" id="w2item"></span>
-                <span class="pillText" id="w2offering"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <footer class="footer">
-      <span>ivyrosewolf.org</span>
-      <span class="dot">•</span>
-      <span><a href="/" class="footerLink">home</a></span>
-    </footer>
-  </main>
-
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
