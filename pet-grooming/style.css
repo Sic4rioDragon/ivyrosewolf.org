@@ -384,12 +384,6 @@ body {
   .price-card,
   .extras-card {
     border-radius: 20px;
-  }
-
-  .hero__text,
-  .info-card,
-  .price-card,
-  .extras-card {
     padding: 20px 18px;
   }
 
