@@ -212,6 +212,13 @@ body {
   color: #2e2e2e;
 }
 
+.section-note--sub {
+  margin-top: -4px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #444;
+}
+
 .package-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
