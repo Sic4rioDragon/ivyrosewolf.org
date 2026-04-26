@@ -27,7 +27,7 @@
     { "id": "onryo", "name": "The Onryo", "img": "assets/dbd/CharPortraits/Kepler/K27_TheOnryo_Portrait.png", "owned": true, "prestige": 3 },
     { "id": "dredge", "name": "The Dredge", "img": "assets/dbd/CharPortraits/Meteor/K28_TheDredge_Portrait.png", "owned": true, "prestige": 3 },
     { "id": "knight", "name": "The Knight", "img": "assets/dbd/CharPortraits/Quantum/K30_TheKnight_Portrait.png", "owned": true, "prestige": 3 },
-    { "id": "skullmerchant", "name": "The Skull Merchant", "img": "assets/dbd/CharPortraits/Saturn/K31_TheSkullMerchant_Portrait.png", "owned": true, "prestige": 3 },
+    { "id": "skullmerchant", "name": "The Skull Merchant", "img": "https://ivyrosewolf.org/assets/images/Main_SkullMerchant.png", "owned": true, "main": true, "prestige": 3 },
     { "id": "goodguy", "name": "The Good Guy", "img": "assets/dbd/CharPortraits/Yerkes/K34_TheYerkes_Portrait.png", "owned": true, "prestige": 3 },
 
     { "id": "unknown", "name": "The Unknown", "img": "assets/dbd/CharPortraits/Applepie/K35_TheUnknown_Portrait.png", "owned": true, "prestige": 3 },

@@ -53,7 +53,7 @@
     { "id": "laracroft", "name": "Lara Croft", "img": "assets/dbd/CharPortraits/Donut/S43_LaraCroft_Portrait.png", "owned": true, "prestige": 3 },
     { "id": "trevor", "name": "Trevor Belmont", "img": "assets/dbd/CharPortraits/Eclair/S44_TrevorBelmont_Portrait.png", "owned": true, "prestige": 1 },
     { "id": "tauriecain", "name": "Taurie Cain", "img": "assets/dbd/CharPortraits/Gelato/S45_TaurieCain_Portrait.png", "owned": true, "prestige": 3 },
-    { "id": "orela", "name": "Orela Rose", "img": "assets/dbd/CharPortraits/Jerky/S46_OrelaRose_Portrait.png", "owned": true, "prestige": 63 },
+    { "id": "orela", "name": "Orela Rose", "img": "https://ivyrosewolf.org/assets/images/Main_Orela.png", "owned": true, "main": true, "prestige": 63 },
 
     { "id": "rickgrimes", "name": "Rick", "img": "assets/dbd/CharPortraits/Lasagna/S47_RickGrimes_Portrait.png", "owned": true, "prestige": 3 },
     { "id": "michonnegrimes", "name": "Michonne", "img": "assets/dbd/CharPortraits/Lasagna/S48_MichonneGrimes_Portrait.png", "owned": true, "prestige": 3 },
