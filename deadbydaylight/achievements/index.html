@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>DBD Achievements — IvyRoseWolf</title>
+  <meta name="description" content="IvyRoseWolf's Dead by Daylight achievements tracker for survivors, killers, and general achievements.">
+  <meta name="theme-color" content="#07111d">
+
+  <link rel="canonical" href="https://ivyrosewolf.org/deadbydaylight/achievements/">
+  <link rel="stylesheet" href="./achievements.css?v=2">
+
+  <link rel="icon" type="image/png" href="/assets/icons/ivy_logo.png">
+  <link rel="shortcut icon" href="/assets/icons/ivy_logo.png">
+  <link rel="apple-touch-icon" href="/assets/icons/ivy_logo.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ivyrosewolf.org">
+  <meta property="og:title" content="Dead by Daylight • Achievements • IvyRoseWolf">
+  <meta property="og:description" content="Ivy's Dead by Daylight achievements — survivors, killers, and general achievements.">
+  <meta property="og:url" content="https://ivyrosewolf.org/deadbydaylight/achievements/">
+  <meta property="og:image:alt" content="Dead by Daylight banner featuring Orela Rose and The Skull Merchant">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dead by Daylight • Achievements • IvyRoseWolf">
+  <meta name="twitter:description" content="Ivy's Dead by Daylight achievements — survivors, killers, and general achievements.">
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <main class="page-shell">
+    <section class="hero">
+      <a
+        class="hero-art hero-art-left hero-art-link"
+        href="/deadbydaylight/survivors.html"
+        aria-label="Go to survivors page"
+      >
+        <img src="/assets/images/Main_Orela.png" alt="Orela Rose">
+      </a>
+
+      <div class="hero-copy">
+        <h1>Achievements</h1>
+        <p class="subtitle">Ivy's Dead by Daylight achievements</p>
+
+        <nav class="hero-nav" aria-label="Dead by Daylight">
+          <a href="/">Home</a>
+          <a href="/deadbydaylight/survivors.html">Survivors</a>
+          <a href="/deadbydaylight/">Killers</a>
+          <a href="/challenges/">Challenges</a>
+          <a class="active" href="/deadbydaylight/achievements/">Achievements</a>
+        </nav>
+      </div>
+
+      <a
+        class="hero-art hero-art-right hero-art-link"
+        href="/deadbydaylight/"
+        aria-label="Go to killers page"
+      >
+        <img src="/assets/images/Main_SkullMerchant.png" alt="The Skull Merchant">
+      </a>
+    </section>
+
+    <section class="toolbar card compact">
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-label">Unlocked</span>
+          <strong id="countUnlocked">0</strong>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Locked</span>
+          <strong id="countLocked">0</strong>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Shown</span>
+          <strong id="countShown">0</strong>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <label class="search-wrap">
+          <input id="searchInput" type="search" placeholder="Search achievements...">
+        </label>
+
+        <label class="select-wrap">
+          <select id="filterSelect">
+            <option value="all">All filters</option>
+            <option value="killer">Killer only</option>
+            <option value="survivor">Survivor only</option>
+            <option value="general">General only</option>
+            <option value="adept">Adept only</option>
+            <option value="map">Map only</option>
+            <option value="extra">Extra only</option>
+            <option value="general-section">General section only</option>
+          </select>
+        </label>
+
+        <label class="check">
+          <input id="toggleUnlocked" type="checkbox">
+          <span>Show all</span>
+        </label>
+      </div>
+    </section>
+
+    <section class="summary-grid">
+      <details class="card mini-panel">
+        <summary class="mini-head">
+          <span>Killer summary</span>
+          <span id="killerSummaryCounts">0 locked</span>
+        </summary>
+        <div id="killerSummary" class="summary-list mini-body"></div>
+      </details>
+
+      <details class="card mini-panel">
+        <summary class="mini-head">
+          <span>Survivor summary</span>
+          <span id="survivorSummaryCounts">0 locked</span>
+        </summary>
+        <div id="survivorSummary" class="summary-list mini-body"></div>
+      </details>
+
+      <details class="card mini-panel">
+        <summary class="mini-head">
+          <span>General summary</span>
+          <span id="generalSummaryCounts">0 locked</span>
+        </summary>
+        <div id="generalSummary" class="summary-list mini-body"></div>
+      </details>
+    </section>
+
+    <section class="content-stack">
+      <article class="card category-card">
+        <div class="section-head">
+          <h2>Killer achievements</h2>
+        </div>
+        <div id="killerSections" class="section-stack"></div>
+      </article>
+
+      <article class="card category-card">
+        <div class="section-head">
+          <h2>Survivor achievements</h2>
+        </div>
+        <div id="survivorSections" class="section-stack"></div>
+      </article>
+
+      <article class="card category-card">
+        <div class="section-head">
+          <h2>General achievements</h2>
+        </div>
+        <div id="generalSections" class="section-stack"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./achievements.js?v=2"></script>
+</body>
+</html>
