@@ -36,7 +36,7 @@
     { "id": "houndmaster", "name": "The Houndmaster", "img": "assets/dbd/CharPortraits/Gelato/K38_TheHoundmaster_Portrait.png", "owned": true, "prestige": 3 },
     { "id": "ghoul", "name": "The Ghoul", "img": "assets/dbd/CharPortraits/Icecream/K39_TheGhoul_Portrait.png", "owned": true, "prestige": 3 },
     { "id": "animatronic", "name": "The Animatronic", "img": "assets/dbd/CharPortraits/Ketchup/K40_TheAnimatronic_Portrait.png", "owned": true, "prestige": 3 },
-    { "id": "krasue", "name": "The Krasue", "img": "assets/dbd/CharPortraits/Maple/T_UI_K41_TheKrasue_Portrait.png", "owned": true, "prestige": 3 },
+    { "id": "krasue", "name": "The Krasue", "img": "assets/dbd/CharPortraits/Maple/T_UI_K41_TheKrasue_Portrait.png", "owned": false, "prestige": 3 },
     { "id": "first", "name": "The First", "img": "assets/dbd/CharPortraits/Poutine/T_UI_K42_TheFirst_Portrait.png", "owned": true, "prestige": 3 }
   ]
 }
