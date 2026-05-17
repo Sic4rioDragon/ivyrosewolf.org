@@ -11,7 +11,7 @@
       "adept_doctor": true,
       "adept_dredge": true,
       "adept_executioner": true,
-      "adept_first": false,
+      "adept_first": true,
       "adept_ghost_face": true,
       "adept_ghoul": true,
       "adept_good_guy": true,
@@ -20,7 +20,7 @@
       "adept_houndmaster": false,
       "adept_huntress": true,
       "adept_knight": true,
-      "adept_krasue": false,
+      "adept_krasue": true,
       "adept_legion": true,
       "adept_lich": true,
       "adept_mastermind": true,
@@ -37,7 +37,7 @@
       "adept_trapper": true,
       "adept_trickster": true,
       "adept_twins": true,
-      "adept_unknown": false,
+      "adept_unknown": true,
       "adept_wraith": true,
       "adept_xenomorph": true,
       "tools_of_the_trade": {
@@ -103,18 +103,18 @@
     "extra": {
       "battle_caster": {
         "unlocked": false,
-        "progress": 8,
+        "progress": 9,
         "goal": 25
       },
       "binding_teeth": false,
       "biological_weaponry": {
         "unlocked": false,
-        "progress": 9,
+        "progress": 10,
         "goal": 65
       },
       "bloodbath": {
         "unlocked": false,
-        "progress": 57,
+        "progress": 71,
         "goal": 75
       },
       "bound_and_downed": true,
@@ -125,17 +125,17 @@
       },
       "butcherin": {
         "unlocked": false,
-        "progress": 19,
+        "progress": 26,
         "goal": 100
       },
       "caws_of_death": {
         "unlocked": false,
-        "progress": 30,
+        "progress": 32,
         "goal": 50
       },
       "cleansed_in_agony": {
         "unlocked": false,
-        "progress": 4,
+        "progress": 7,
         "goal": 30
       },
       "collision_course": {
@@ -182,7 +182,7 @@
       "one_thousand_cuts": true,
       "prey_upon": {
         "unlocked": false,
-        "progress": 0,
+        "progress": 14,
         "goal": 20
       },
       "remember_who_i_am": {
@@ -193,7 +193,7 @@
       "rightful_owner": false,
       "shocking_treatment": {
         "unlocked": false,
-        "progress": 395,
+        "progress": 426,
         "goal": 500
       },
       "skilled_huntress": {
@@ -220,22 +220,14 @@
         "progress": 6,
         "goal": 50
       },
-      "terror_of_lv_426": {
-        "unlocked": false,
-        "progress": 18,
-        "goal": 30
-      },
+      "terror_of_lv_426": true,
       "the_grind": {
         "unlocked": false,
-        "progress": 42,
+        "progress": 60,
         "goal": 100
       },
       "thrill_of_the_chase": true,
-      "torn_asunder": {
-        "unlocked": false,
-        "progress": 0,
-        "goal": 50
-      },
+      "torn_asunder": true,
       "totally_vulnerable": true,
       "triggered": {
         "unlocked": false,
@@ -245,7 +237,7 @@
       "viral_video": true,
       "youve_got_guts": {
         "unlocked": false,
-        "progress": 0,
+        "progress": 7,
         "goal": 20
       }
     }
@@ -304,7 +296,7 @@
     },
     "map": {
       "all_aboard": true,
-      "ancestors_rite": false,
+      "ancestors_rite": true,
       "campbells_chapel_legacy": true,
       "cherish_your_life": true,
       "classy_act": true,
@@ -323,7 +315,7 @@
       "operation_survival": true,
       "outbreak_breakout": {
         "unlocked": false,
-        "progress": 16,
+        "progress": 18,
         "goal": 20
       },
       "outrun_the_overlap": true,
@@ -354,14 +346,10 @@
       "escaping_the_nightmare": true,
       "ever_vigilant": true,
       "every_last_drop": true,
-      "expert_generalist": {
-        "unlocked": false,
-        "progress": 0,
-        "goal": 8
-      },
+      "expert_generalist": true,
       "skilled_generalist": {
         "unlocked": false,
-        "progress": 7,
+        "progress": 8,
         "goal": 8
       },
       "expert_survivor": true,
@@ -374,7 +362,7 @@
       "hero_of_wallachia": true,
       "hiding_seeker": {
         "unlocked": false,
-        "progress": 10,
+        "progress": 11,
         "goal": 35
       },
       "honor_the_bloodline": true,
@@ -399,7 +387,7 @@
       "no_one_left_behind": true,
       "not_today": {
         "unlocked": false,
-        "progress": 41,
+        "progress": 42,
         "goal": 50
       },
       "one_more_step": true,
